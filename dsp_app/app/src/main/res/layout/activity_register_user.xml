@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#152238"
+    tools:context=".RegisterUser">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="300dp"
+        android:maxHeight="340dp"
+        android:maxWidth="250dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ct"
+        android:onClick="onClick"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="200dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="400dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="200dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="450dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="200dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/street_number"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="500dp"
+        android:ems="10"
+        android:hint="Street Number"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/street_name"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="200dp"
+        android:ems="10"
+        android:hint="Street Name"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/post_code"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="550dp"
+        android:ems="10"
+        android:hint="Post Code"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginRight="200dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/district"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="600dp"
+        android:ems="10"
+        android:hint="District"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/register_user"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="650dp"
+        android:backgroundTint="#B78428"
+        android:text="Sign UP"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

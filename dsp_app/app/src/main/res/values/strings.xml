@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Crime_Tide</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="select_crime">Select Crime</string>
+    <string name="select_district">Select District</string>
+    <string name="select_year">Select Year</string>
+    <string name="select_occurred_year">Select Past Year</string>
+</resources>

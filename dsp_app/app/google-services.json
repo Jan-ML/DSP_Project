@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "721601263725",
+    "project_id": "auth-2a0a5",
+    "storage_bucket": "auth-2a0a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721601263725:android:88ee6a041f31dc7c1e2764",
+        "android_client_info": {
+          "package_name": "com.example.crime_tide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721601263725-4spnjv79rc8idn8vuoncfsq5t95rjskc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSwBw69f0_9GA0NXIP4X6T15V33k-IQ30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721601263725-4spnjv79rc8idn8vuoncfsq5t95rjskc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:isScrollContainer="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#152238">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:hint="@string/select_year"
+        android:theme="@style/Theme.MaterialComponents.Bridge"
+        app:endIconTint="#B78428"
+        app:hintTextColor="#B78428"
+        android:layout_marginStart="20dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:popupBackground="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B78428"
+            android:textSize="18sp"
+            android:theme="@style/Autocomplete"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/show_prediction"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="485dp"
+        android:backgroundTint="#B78428"
+        android:text="Show Prediction"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="485dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="500dip"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="70dp" />
+
+</RelativeLayout>
