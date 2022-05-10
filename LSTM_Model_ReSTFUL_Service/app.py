@@ -20,10 +20,6 @@ def predict():
 
 
 def get_prediction(values):
-    predictions = [4792, 4821, 4840, 4928, 4958, 5071, 5019, 4917, 4771, 4703, 4691,
-                   4707, 4973, 4787, 4757, 4710, 4677, 4924, 5012, 4700, 4710, 4758,
-                   4541, 4641, 4421, 3921, 4811, 5001, 5275, 5689, 6009, 6396, 5807,
-                   5271, 4862, 4501]
     model = keras.models.load_model("final_lstm.h5")
     df = pd.DataFrame(values)
     df.index = pd.to_datetime(df['Month'], format='%Y.%m')
@@ -51,7 +47,7 @@ def get_prediction(values):
     df_proj = df_proj.round(0)
     occurred_crimes = df_proj[df_proj['Total_Crimes'].notnull()]
     occurred_crimes['Total_Crimes'] = occurred_crimes['Total_Crimes'].astype('int32')
-    col_predict_list = occurred_crimes['Total_Crimes'].tolist() + predictions
+    col_predict_list = occurred_crimes['Total_Crimes'].tolist()
     return col_predict_list
 
 
